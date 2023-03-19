@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './Header';
-import Descritpion from './Descritpion';
+import logo from '../assets/logo.png';
+import '../styles/Banner.css'
 
 function Banner() {
+  const title = "Flowers Shop";
+
   return (
-    <div className='baniere'>
-      <Header />
-      <Descritpion />
+    <div className='banner'>
+      <img src={logo} alt='Flowers Shop' className='logo' />
+      <h1 className='title'>{title}</h1>
     </div>
   )
 }
